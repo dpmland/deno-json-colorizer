@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dpmland/dpm/dev/schemas/dpm.json",
+  "name": "deno-colorize-json",
+  "version": "0.1.0",
+  "description": "A library for colorizing JSON strings for DENO",
+  "author": "Teo",
+  "license": "MIT",
+  "main": "mod.ts",
+  "scripts": {
+    "build_in": {
+      "test": "deno test -A --unstable",
+      "fmt": "deno fmt -c deno.jsonc",
+      "lint": "deno lint -c deno.jsonc"
+    }
+  },
+  "dependencies": {}
+}

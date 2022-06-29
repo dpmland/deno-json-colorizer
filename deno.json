@@ -1,0 +1,16 @@
+{
+  "$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "indentWidth": 2,
+      "singleQuote": true
+    }
+  },
+  "importMap": "./dpm_imports.json",
+  "tasks": {
+    "test": "deno test -A --unstable",
+    "fmt": "deno fmt -c deno.json",
+    "lint": "deno lint -c deno.json"
+  }
+}
