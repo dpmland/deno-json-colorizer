@@ -2,6 +2,8 @@
 
 ---
 
+![](./docs/image.JPG)
+
 A library for colorizing JSON strings for DENO
 
 > _Adapted from the Node Version
