@@ -13,18 +13,18 @@ A library for colorizing JSON strings for DENO
 
 ### Installation
 
-`dpm install json-colorizer`
+`dpm install json-colorize`
 
 Or import like:
 
 ```ts
-import { colorize } from 'https://deno.land/x/json_colorizer/mod.ts';
+import { colorize } from 'https://deno.land/x/json_colorize/mod.ts';
 ```
 
 ### Usage
 
 ```ts
-import { colorize } from 'https://deno.land/x/json_colorizer/mod.ts';
+import { colorize } from 'https://deno.land/x/json_colorize/mod.ts';
 colorize('{ \'foo\': \'bar\' }');
 ```
 
@@ -32,7 +32,7 @@ If you pass a string to the colorize function, it will treat it as
 pre-serialized JSON. This can be used in order to colorize pretty-printed JSON:
 
 ```ts
-import { colorize } from 'https://deno.land/x/json_colorizer/mod.ts';
+import { colorize } from 'https://deno.land/x/json_colorize/mod.ts';
 const json = JSON.stringify({ 'foo': 'bar' }, null, 2);
 colorize(json);
 ```
@@ -40,7 +40,7 @@ colorize(json);
 And you can save the content in a variable and not print with this:
 
 ```ts
-import { colorize } from 'https://deno.land/x/json_colorizer/mod.ts';
+import { colorize } from 'https://deno.land/x/json_colorize/mod.ts';
 
 const msg = colorize('{ \'fooo\': \'baaar\' }', { print: false });
 
@@ -67,7 +67,7 @@ You can custom like:
 import {
   CODE_COLORS,
   colorize,
-} from 'https://deno.land/x/json_colorizer/mod.ts';
+} from 'https://deno.land/x/json_colorize/mod.ts';
 
 const example = {
   aaaaaa: 'eeeee',
